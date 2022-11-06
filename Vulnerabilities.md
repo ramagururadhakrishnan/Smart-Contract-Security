@@ -1,1 +1,12 @@
-
+### Smart contract Vulnerabilities  on the Ethereum Blockchain
+- 1.Reentrancy: Reentrant function calls make a contract to behave in an unexpected way.
+- 2.Access Control: Failure to use function modifiers.
+- 3.Arithmetic: Integer over/underflows.
+- 4.Unchecked Low Level Calls: call(), callcode(), delegatecall() or send() fails and it is not checked.
+- 5.Denial of Service: The contract is overwhelmed with time-consuming computations.
+- 6.Bad Randomness: Malicious miner biases the outcome.
+- 7.Front Running: Two dependent transactions that invoke the same contract are included in one block.
+- 8.Time Manipulation: The timestamp of the block is manipulated by the miner 
+- 9.Short Addresses: EVM itself accepts incorrectly padded arguments.
+- 10.Mishandled Exceptions : This makes the contracts vulnerable to attacks because programmers will be unaware of any ether that is lost if these exceptions are not handled properly and the transactions are reverted.
+- 11.tx. origin: tx. origin is a global variable in Solidity which returns the address of the account that sent the transaction. Using the variable for authorization could make a contract vulnerable if an authorized account calls into a malicious contract.
