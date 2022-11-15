@@ -1,6 +1,6 @@
 ### Smart contract Vulnerabilities  on the Ethereum Blockchain
 
-|  S.NO |  Security tool   |  Method   |  
+|  S.NO | Vulnerabilities  |  Discrption   |  
 |:-------:|---------|------------|
 1|Reentrancy| Reentrant function calls make a contract to behave in an unexpected way.Calling external contracts gives them control over execution.|
 2|Access Control| Failure to use function modifiers.|
