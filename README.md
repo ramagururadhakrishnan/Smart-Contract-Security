@@ -3,12 +3,17 @@
 
 ## CONTENTS
 - [Introduction](Introduction.md)
-- [Tools](Tools.md)
-- [Vunlerabilites](Vulnerabilities.md)
+- [Preliminaries]
+  - Smart Contract
+  - Vulnerabilites
+  - List of Vunlerabilites
+  - [Vunlerabilites](Vulnerabilities.md)
+  - Tools and Techniques
+  - List of Tools
+  - [Tools](Tools.md)
+  - DASP10 and SWC
+  - Popular Vulnerabilites
 - [Experiments](Experiments.md)
-
-
-
 
 ## Acknowledgement
 We would like to acknowldge the support provided by **TIFAC-CORE in Cyber Security**, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, India in carrying out this work as part of "**M.Tech Cyber Security**" Thesis. 
