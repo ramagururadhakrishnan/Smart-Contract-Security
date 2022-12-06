@@ -20,7 +20,7 @@
 |16| 31-Oct-22        | Exploring Ziion OS  |  learing solidity programming    | 
 |17|1-Nov-22         | Learning smart contact programming  |   Installation of the smartcheck tool    | 
 |18|  8-Nov-22       |  Smarkcheck installed in system and attented docker class  |   Identifying  the vulnerabilities using tools     |
-||         |   |      | 
+|19| 14-Nov-22         | 2nd Review and discussed what to present in the review  |      | 
 ||         |   |      | 
 ||         |   |      | 
 ||         |   |      | 
