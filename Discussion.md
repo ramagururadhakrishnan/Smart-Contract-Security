@@ -2,10 +2,10 @@
 
 |  S.NO |  DATE     | POINTS DISCUSSED  |  NEXT STEPS |
 |:-------:|---------|---------------------|-------------|
-|1  | 24-Aug-2022    |Project topic discussion Title discussion| Create the accounts in github,Rechearch gate,ORCid    |
-|2| 25-Aug-2022        | Listing the base papers by using publish and perish tool | downloading the base papers   | 
-|3|1-Sep-2022         |  Teams meeting ,downloading the base papers from publish and perish | Finalizing the base papers  | 
-|4|   9-Sep-2022      | Listing the reference papers from publish and perish  |  Study of  base paprs     | 
+|1  | 24-Aug-22    |Project topic discussion Title discussion| Create the accounts in github,Rechearch gate,ORCid    |
+|2| 25-Aug-22        | Listing the base papers by using publish and perish tool | downloading the base papers   | 
+|3|1-Sep-22         |  Teams meeting ,downloading the base papers from publish and perish | Finalizing the base papers  | 
+|4|   9-Sep-22      | Listing the reference papers from publish and perish  |  Study of  base paprs     | 
 |5|15-Sep-22         | Prepared bibliometric Analysis  | Understanding the survey papers     | 
 |6|19-Sep-22         | Survey paper discussion About formal verification methods| Framing the problem statement | 
 |7|21-Sep-22      | 0th Review discussion  |  PPT  for 0th review    | 
