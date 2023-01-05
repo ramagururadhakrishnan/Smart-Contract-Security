@@ -1,55 +1,68 @@
+<!-- 
+Author: Pothuri Lakshmi Harika
+Created Date : 26-Dec-2022
+Updated Date : 05-Jan-2023
+Description : Smart Contract Analyzer
+-->
+
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-<title>Smart Contract Checker</title>
-</head>
-<style>
-body{
-background-image:url(pic.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-}
-</style>
-<script> 
-   function init() {
-              document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
-          }
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <title>Smart Contract Checker</title>
+   </head>
+   <style>
+      body{
+      background-image:url(pic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+   </style>
+   <script> 
+      function init() {
+                 document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+             }
 
-          function handleFileSelect(event) {
-            const reader = new FileReader()
-            reader.onload = handleFileLoad;
-            reader.readAsText(event.target.files[0])
-          }
+             function handleFileSelect(event) {
+               const reader = new FileReader()
+               reader.onload = handleFileLoad;
+               reader.readAsText(event.target.files[0])
+             }
 
-          function handleFileLoad(event) {
-            console.log(event);
-            document.getElementById('fileContent').textContent = event.target.result;
-          }
-      
-    </script> 
-<body onload="init()">
-<center>  
-   <h1><p style="color:red">Vulnerability Detection Tool </p></h1>
-   <h2><p style="color:red">About Page</p></h2>
-   <p style="color:red">Smart-Contract scanning tool built to discover vulnerabilities & mitigate risks in code</p>
-   <p style="color:red">This tool, which was created by rulz, lists vulnerabilities</p>
-</center>
-   
-<form>
-   <table align="center"bgcolor="lightgreen" cellspacing="18" cellpadding="18">
-   <tr><td>
-   <lable>Select a File to Upload</lable>
-   </td>
-   <td><input type="file" name="fileInput" id="fileInput"></td>
-   </tr>
-   <tr><td>
-   <input type="Submit" value="Submit"></td>
-   </td>
-   </tr>
-   </table>
-</form>
-<table align="center"bgcolor="white" cellspacing="18" cellpadding="18">
-   <tr><td><pre id="fileContent"></pre></td></tr>
-</table>
-</body>
+             function handleFileLoad(event) {
+               console.log(event);
+               document.getElementById('fileContent').textContent = event.target.result;
+             }
+
+      function ValidateSolidity() {
+
+         // Logic to Parse the Solidity Code and Print the Stats
+
+      }
+
+   </script> 
+   <body onload="init()">
+      <center>  
+         <h1><p style="color:red">Vulnerability Detection Tool </p></h1>
+         <h2><p style="color:red">About Page</p></h2>
+         <p style="color:red">Smart-Contract scanning tool built to discover vulnerabilities & mitigate risks in code</p>
+         <p style="color:red">This tool, which was created by rules, lists vulnerabilities</p>
+      </center>
+
+      <form>
+         <table align="center"bgcolor="lightgreen" cellspacing="18" cellpadding="18">
+            <tr><td>
+            <lable>Select a File to Upload</lable>
+            </td>
+            <td><input type="file" name="fileInput" id="fileInput"></td>
+            </tr>
+            <tr><td>
+            <input type="Submit" value="Submit" onclick="ValidateSolidtiy()"></td>
+            </td>
+            </tr>
+         </table>
+      </form>
+      <table align="center"bgcolor="white" cellspacing="18" cellpadding="18">
+         <tr><td><pre id="fileContent"></pre></td></tr>
+      </table>
+   </body>
 </html>
