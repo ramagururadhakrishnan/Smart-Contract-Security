@@ -1,7 +1,8 @@
-<Html>
-<Head>
-<Title>File Upload </Title>
-</Head>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Smart Contract Checker</title>
+</head>
 <style>
 body{
 background-image:url(pic.jpg);
@@ -9,12 +10,29 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 </style>
-<body>
- <center>  <h1><p style="color:red">Vulnerability Detection Tool </p></h1></center>
+<script> 
+   function init() {
+              document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+          }
+
+          function handleFileSelect(event) {
+            const reader = new FileReader()
+            reader.onload = handleFileLoad;
+            reader.readAsText(event.target.files[0])
+          }
+
+          function handleFileLoad(event) {
+            console.log(event);
+            document.getElementById('fileContent').textContent = event.target.result;
+          }
+      
+    </script> 
+<body onload="init()">
+<center>  <h1><p style="color:red">Vulnerability Detection Tool </p></h1></center>
 <center><h2><p style="color:red">About Page</p></h2></center>
  <center><p style="color:red">Smart-Contract scanning tool built to discover vulnerabilities & mitigate risks in code</p></center>
 <center><p style="color:red">This tool, which was created by rulz, lists vulnerabilities</p></center>
-<Form action="demo.php" method="post" enctype="multipart/form-data">
+<form action="demo.php" method="post" enctype="multipart/form-data">
 <table align="center"bgcolor="lightgreen" cellspacing="18" cellpadding="18">
 <tr>
 <td>
@@ -28,6 +46,7 @@ background-size: cover;
 </td>
 </tr>
 </table>
-</Form>
-</Body>
+<p id="fileContent"></p>
+</form>
+</body>
 </html>
