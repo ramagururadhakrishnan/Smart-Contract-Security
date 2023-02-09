@@ -1,0 +1,16 @@
+MiningVulnerable
+
+The rules in SmartCheck for the code of the contract "MiningVulnerable" can include:
+
+Checks for the correct usage of require statements to ensure that an address is not already marked as a miner before allowing it to mine, and to check if the address is indeed a miner before allowing it to stop mining.
+
+Checks for the proper update of the totalSupply and balances variables after a successful mine or stop mine operation.
+
+Checks for the correct handling of corner cases, such as attempting to mine or stop mining with insufficient funds or when the address is already marked as a miner or not.
+
+Security checks for potential vulnerabilities, such as reentrancy attacks, overflow/underflow of variables, and access control issues.
+
+These are just some of the examples, and the actual RDL would depend on the specific requirements and goals of the contract.
+
+
+

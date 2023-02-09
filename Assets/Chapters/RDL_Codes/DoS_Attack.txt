@@ -1,0 +1,46 @@
+Denial-of-Service (DoS) Attack 
+SmartCheck rule :
+
+rule DoS_Attack_Prevention {
+when {
+c: Contract ->
+c.functions.attack().gas > 1000000
+}
+then {
+warn("DoS attack detected: Function 'attack' in contract '" + c.contractName + "' has a gas cost of over 1 million, which could cause a Denial-of-Service attack.");
+}
+}
+
+This rule will trigger a warning if the "attack" function in a contract has a gas cost of over 1 million units. This will alert the user to the potential of a DoS attack in the code, allowing them to take appropriate
+
+Slither:
+
+def rule_DoS_Attack_Prevention(contracts):
+for contract in contracts:
+for function in contract.functions:
+if function.name == "attack":
+if function.gas > 1000000:
+print(f"Warning: Function 'attack' in contract '{contract.name}' has a gas cost of over 1 million, which could cause a Denial-of-Service attack.")
+
+if name == "main":
+rule_DoS_Attack_Prevention(sys.argv[1:])
+
+This rule uses the Slither API to check for the "attack" function in a set of contracts, and it will print a warning if the gas cost of the function is over 1 million units, indicating a potential DoS attack.
+
+Script in Python to detect potential DoS attacks using Oyente:
+
+
+def detect_DoS(filename):
+with open(filename) as f:
+data = json.load(f)
+for contract in data["contracts"]:
+for function in contract["functions"]:
+if function["name"] == "attack":
+gas = function["gas"]
+if gas > 1000000:
+print(f"Warning: Function 'attack' in contract '{contract['name']}' has a gas cost of over 1 million, which could cause a Denial-of-Service attack.")
+
+if name == "main":
+detect_DoS("output.json")
+
+This script uses the json library to parse the output of Oyente, and it checks for the "attack" function in each contract. If the gas cost of the function is over 1 million units, the script will print a warning indicating a potential DoS attack.

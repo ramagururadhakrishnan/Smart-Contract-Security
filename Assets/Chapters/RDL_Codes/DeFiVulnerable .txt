@@ -1,0 +1,9 @@
+ DeFiVulnerable 
+ 
+RDL for this code in SmartCheck can include rules such as:
+
+Ensure that the deposit function only accepts positive values.
+Ensure that the withdraw function only transfers funds to the calling address if they have sufficient funds in their account.
+Ensure that the trade function only transfers funds from the calling address if they have sufficient funds in their account.
+Ensure that the totalSupply variable accurately reflects the total supply of funds in the contract.
+Ensure that the balances mapping accurately reflects the balance of each address

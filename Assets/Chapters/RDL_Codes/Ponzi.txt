@@ -1,0 +1,10 @@
+PonziVulnerable
+
+RDL for this code in SmartCheck can include rules such as:
+
+The invest function should check if the sender is already an investor before adding to their investment balance
+The payInterest function should distribute the interest among all investors, not just the sender
+The payInterest function should calculate the interest correctly, using the formula interest = totalInvested * interestRate / 100
+The withdraw function should not allow the total invested to fall below zero
+The contract should have a mechanism to prevent overflow/underflow errors in arithmetic operations
+The contract should enforce an upper limit on the investment amount to prevent large investments from draining all the funds.

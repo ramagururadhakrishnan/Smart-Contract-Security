@@ -1,0 +1,25 @@
+Simple RDL rule that checks for integer overflow/underflow vulnerabilities in Solidity code:
+
+rule CheckForOverflowUnderflow {
+when {
+a: ArithOp
+b: ArithOp
+c: ArithOp
+a.op == "add"
+b.op == "add"
+c.op == "add"
+a.result_type == "uint256"
+b.result_type == "uint256"
+c.result_type == "uint256"
+a.operand1 == b.result
+b.operand1 == c.result
+a.result_value == 0
+} then {
+report
+"Possible integer overflow/underflow detected."
+b.source_range
+"info"
+}
+}
+
+This rule checks for the presence of three consecutive addition operations, where the first operand of the first addition is the result of the second addition, and the first operand of the second addition is the result of the third addition. If the result of the first addition is equal to zero, it reports a possible integer overflow/underflow vulnerabilit

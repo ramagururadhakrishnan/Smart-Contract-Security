@@ -1,0 +1,9 @@
+FlashLoanVulnerable 
+
+RDL for this code in SmartCheck can include rules such as:
+
+Requiring a function for checking the borrower's creditworthiness before lending funds.
+Implementing a timeout for repayments to prevent indefinite usage.
+Adding a maximum loan amount to limit the potential impact of flash loans.
+Implementing a mechanism for penalizing late or missing repayments.
+Ensuring that the lender's funds are stored in a secure, decentralized contract.

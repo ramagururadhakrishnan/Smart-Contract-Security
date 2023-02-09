@@ -1,0 +1,15 @@
+InadequateAccessControls
+To provide a rule defined language (RDL) for this code in the tool "smartcheck", we need to define the security rules we want to enforce.
+Here's an example RDL for enforcing the requirement that only the contract's owner can modify the value var
+
+rule InadequateAccessControlsVulnerable_only_owner_can_set_value {
+when {
+c: ContractCallEvent(c.target == this && c.function == "setValue");
+}
+then {
+require(c.caller == tx.origin.contract, "Only contract owner can set value");
+}
+}
+
+
+

@@ -1,0 +1,19 @@
+To write the rdl in Manticore, you will have to write constraints that ensure the contract operates as intended. Here's an example of how you could write the rdl for the fixed contract:
+
+contract TODFixed {
+    uint256 public value;
+
+    function setValue(uint256 newValue) public {
+        value = newValue;
+        assert value == newValue;
+    }
+
+    function attack() public {
+        uint256 localValue = 1;
+        setValue(localValue);
+        localValue = 2;
+        setValue(localValue);
+        assert value == 2;
+    }
+}
+The rdl checks that the value of the contract is what was expected after the function setValue is executed.
